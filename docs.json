@@ -1,68 +1,117 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "aspen",
+  "name": "Trilo",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#00C1FF",
+    "light": "#00D4FF",
+    "dark": "#0099CC"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
+  "metadata": {
+    "og:site_name": "Trilo Documentation",
+    "og:image": "/images/social-preview.png",
+    "twitter:site": "@trilo_chat"
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "getting-started/introduction",
+              "getting-started/quickstart",
+              "getting-started/download-apps"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Knowledge Base",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "knowledge-base/overview",
+              "knowledge-base/pages",
+              "knowledge-base/spreadsheets",
+              "knowledge-base/boards",
+              "knowledge-base/organizing-resources",
+              "knowledge-base/sharing"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Tasks",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "tasks/overview",
+              "tasks/creating-tasks",
+              "tasks/managing-tasks",
+              "tasks/views-and-filters",
+              "tasks/assignments"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Calendar",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "calendar/overview",
+              "calendar/events",
+              "calendar/recurring-events",
+              "calendar/integrations",
+              "calendar/booking"
+            ]
+          },
+          {
+            "group": "Chat & Messaging",
+            "pages": [
+              "chat/overview",
+              "chat/project-channels",
+              "chat/direct-messages",
+              "chat/threads-and-replies",
+              "chat/voice-video-calls"
+            ]
+          },
+          {
+            "group": "AI Coworkers",
+            "pages": [
+              "ai-coworkers/overview",
+              "ai-coworkers/chatting-with-ai",
+              "ai-coworkers/ai-capabilities",
+              "ai-coworkers/custom-coworkers"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Guides",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Workspace Management",
             "pages": [
-              "api-reference/introduction"
+              "workspaces/creating-workspaces",
+              "workspaces/areas-and-projects",
+              "workspaces/project-settings"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Team Collaboration",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "collaboration/inviting-members",
+              "collaboration/roles-permissions",
+              "collaboration/real-time-collaboration"
+            ]
+          },
+          {
+            "group": "Settings & Account",
+            "pages": [
+              "settings/profile",
+              "settings/notifications",
+              "settings/workspace-settings",
+              "settings/billing"
+            ]
+          },
+          {
+            "group": "Tutorials",
+            "pages": [
+              "guides/onboarding-your-team",
+              "guides/organizing-projects",
+              "guides/ai-productivity-tips"
             ]
           }
         ]
@@ -71,52 +120,56 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Website",
+          "href": "https://trilo.chat",
+          "icon": "globe"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Community",
+          "href": "https://discord.gg/trilo",
+          "icon": "discord"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/fav.png",
+    "dark": "/logo/fav.png"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@trilo.chat"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Get Started",
+      "href": "https://app.trilo.app"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/trilo_chat",
+      "github": "https://github.com/trilohq",
+      "linkedin": "https://linkedin.com/company/trilo"
     }
+  },
+  "seo": {
+    "indexHiddenPages": false
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true
   }
 }

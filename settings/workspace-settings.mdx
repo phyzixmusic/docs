@@ -1,0 +1,315 @@
+---
+title: "Workspace Settings"
+description: "Configure settings that apply to your entire workspace"
+---
+
+Workspace settings control configuration that affects everyone in your workspace. These settings are managed by workspace owners and admins.
+
+## Accessing Workspace Settings
+
+<Steps>
+  <Step title="Go to Settings">
+    Click **Settings** in the sidebar.
+  </Step>
+  <Step title="Select Workspace">
+    Navigate to **Workspace Settings** or **General**.
+  </Step>
+  <Step title="Configure">
+    Adjust settings as needed.
+  </Step>
+</Steps>
+
+<Info>
+  Only workspace owners and admins can modify workspace settings.
+</Info>
+
+## General Settings
+
+### Workspace Name
+
+Your workspace's display name:
+
+- Shown in sidebar and emails
+- Used in shared links
+- Can be changed anytime
+
+### Workspace URL
+
+The unique identifier in your workspace URL:
+
+**Format:** `your-workspace.trilo.app`
+
+<Warning>
+  Changing the URL breaks existing links. Notify your team before changing.
+</Warning>
+
+### Workspace Logo
+
+Brand your workspace:
+
+1. Click the logo area
+2. Upload an image (square, 200x200+ pixels)
+3. Logo appears in sidebar and notifications
+
+### Description
+
+A brief description of the workspace:
+
+- Helps members understand the workspace purpose
+- Visible in workspace info
+- Optional but recommended
+
+## Member Settings
+
+### Default Role
+
+Set the default role for new invitations:
+
+| Option | Effect |
+|--------|--------|
+| **Member** | New people join as Members |
+| **Guest** | New people join as Guests |
+
+### Invitation Controls
+
+Who can invite new members:
+
+- **Admins only**: Only admins can invite
+- **All members**: Anyone can invite
+
+### Guest Access
+
+Control guest features:
+
+- **Enable/disable** guest invitations
+- Set guest limitations
+- Control guest project access
+
+## Security Settings
+
+### Password Requirements
+
+Set password policies:
+
+- Minimum length
+- Complexity requirements
+- Password expiration (if applicable)
+
+### Two-Factor Authentication
+
+Workspace-wide 2FA policies:
+
+| Setting | Effect |
+|---------|--------|
+| **Optional** | Members choose to enable |
+| **Required** | Everyone must use 2FA |
+
+### Session Settings
+
+Configure session behavior:
+
+- **Session timeout**: Auto-logout after inactivity
+- **Remember me duration**: How long sessions last
+
+### Allowed Sign-in Methods
+
+Control how people can sign in:
+
+- Email/password
+- Google
+- Other SSO providers (if available)
+
+## Default Preferences
+
+### Default Timezone
+
+Set the default timezone for new members:
+
+- New members inherit this setting
+- Can be overridden per user
+- Affects scheduling defaults
+
+### Default Language
+
+Workspace default language:
+
+- New members see this language
+- Can be changed per user
+
+## Integrations
+
+### Connected Services
+
+Manage workspace-wide integrations:
+
+- **Google Calendar**: Sync configuration
+- **Outlook**: Microsoft integration
+- **Other services**: Based on your plan
+
+### API Access
+
+For advanced integrations:
+
+- View API keys
+- Generate new keys
+- Manage access tokens
+
+### Webhooks
+
+Configure webhooks for external systems:
+
+1. Go to **Settings > Integrations > Webhooks**
+2. Add webhook URL
+3. Select events to trigger
+4. Save configuration
+
+## AI Settings
+
+### AI Features
+
+Control AI coworker availability:
+
+| Setting | Effect |
+|---------|--------|
+| **Enabled** | AI coworkers available workspace-wide |
+| **Per-project** | Enable/disable per project |
+| **Disabled** | No AI features |
+
+### Custom AI Coworkers
+
+Manage workspace AI coworkers:
+
+- Create custom coworkers
+- Configure their capabilities
+- Set access permissions
+
+## Storage & Data
+
+### Storage Usage
+
+View storage consumption:
+
+- Files and attachments
+- Resources and documents
+- Current usage vs. limit
+
+### Data Export
+
+Export workspace data:
+
+- Download your data
+- Backup for records
+- Format options (JSON, CSV)
+
+### Data Retention
+
+Configure how long data is kept:
+
+- Message history
+- Deleted items
+- Activity logs
+
+## Danger Zone
+
+### Archive Workspace
+
+Temporarily deactivate the workspace:
+
+- Hides from view
+- Preserves all data
+- Can be restored later
+
+### Delete Workspace
+
+<Warning>
+  Deletion is permanent. All data will be lost forever.
+</Warning>
+
+<Steps>
+  <Step title="Click Delete Workspace">
+    Find this in the Danger Zone section.
+  </Step>
+  <Step title="Confirm">
+    Type the workspace name to confirm.
+  </Step>
+  <Step title="Enter password">
+    Verify your identity.
+  </Step>
+  <Step title="Complete deletion">
+    The workspace and all data are removed.
+  </Step>
+</Steps>
+
+Only workspace owners can delete workspaces.
+
+## Settings by Role
+
+### What Each Role Can Configure
+
+| Setting Area | Owner | Admin | Member |
+|-------------|-------|-------|--------|
+| General settings | Yes | Yes | No |
+| Member settings | Yes | Yes | No |
+| Security settings | Yes | Limited | No |
+| Billing | Yes | No | No |
+| Integrations | Yes | Yes | No |
+| Delete/Archive | Yes | No | No |
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Secure your workspace">
+    Consider requiring 2FA for all members, especially for workspaces with sensitive data.
+  </Accordion>
+
+  <Accordion title="Set sensible defaults">
+    Configure defaults that work for most members. Individual users can customize their own settings.
+  </Accordion>
+
+  <Accordion title="Control invitation permissions">
+    For larger organizations, limit who can invite new members to maintain control.
+  </Accordion>
+
+  <Accordion title="Review settings periodically">
+    As your team grows, revisit settings to ensure they still make sense.
+  </Accordion>
+
+  <Accordion title="Document custom settings">
+    If you configure non-standard settings, document them for other admins.
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Can't access workspace settings">
+    - Verify you have Admin or Owner role
+    - Check if you're in the right workspace
+    - Contact the workspace owner
+  </Accordion>
+
+  <Accordion title="Settings not saving">
+    - Check for validation errors
+    - Ensure you clicked Save
+    - Try refreshing and re-entering
+    - Check your permissions
+  </Accordion>
+
+  <Accordion title="Integration not working">
+    - Verify integration is properly configured
+    - Check API keys are valid
+    - Review integration-specific documentation
+    - Reconnect the integration if needed
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Billing" icon="credit-card" href="/settings/billing">
+    Manage your subscription and payments.
+  </Card>
+  <Card title="Roles & Permissions" icon="user-shield" href="/collaboration/roles-permissions">
+    Understand access control.
+  </Card>
+</CardGroup>

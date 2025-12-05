@@ -1,0 +1,317 @@
+---
+title: "Project Settings"
+description: "Configure your projects for optimal team collaboration"
+---
+
+Each project in Trilo has settings that control its behavior, access, and features. This guide covers all project settings and how to configure them.
+
+## Accessing Project Settings
+
+<Steps>
+  <Step title="Open the project">
+    Navigate to the project you want to configure.
+  </Step>
+  <Step title="Click Settings">
+    Click the gear icon or **Settings** in the project navigation.
+  </Step>
+  <Step title="Configure">
+    Adjust settings as needed.
+  </Step>
+</Steps>
+
+## General Settings
+
+### Project Name
+
+The display name for your project:
+
+- Shown in sidebar and navigation
+- Used in notifications and emails
+- Can be changed anytime
+
+**Tips for good names:**
+- Keep it concise but descriptive
+- Include client name for client projects
+- Use consistent naming conventions
+
+### Project Description
+
+An optional description that helps team members understand:
+
+- What the project is about
+- Its goals and objectives
+- Any relevant context
+
+Good descriptions include:
+- Purpose of the project
+- Key stakeholders
+- Timeline or deadlines (if applicable)
+- Links to relevant resources
+
+### Project Prefix
+
+The short code used for task IDs:
+
+| Setting | Example |
+|---------|---------|
+| Prefix: `PROD` | Tasks: PROD-1, PROD-2, PROD-3 |
+| Prefix: `MKT` | Tasks: MKT-1, MKT-2, MKT-3 |
+
+**Rules:**
+- 2-4 characters recommended
+- Letters and numbers only
+- Must be unique in the workspace
+- Cannot be changed after tasks are created (without affecting existing IDs)
+
+### Area Assignment
+
+Which area the project belongs to:
+
+1. Click the **Area** dropdown
+2. Select the target area
+3. Save changes
+
+Moving projects between areas doesn't affect project data.
+
+## Status Settings
+
+### Project Status
+
+Track the overall state of your project:
+
+| Status | Meaning |
+|--------|---------|
+| **Active** | Currently in progress |
+| **Completed** | Finished but not archived |
+| **On Hold** | Paused temporarily |
+| **Archived** | No longer active, hidden from view |
+
+### Due Date
+
+Set a target completion date:
+
+- Appears on the project overview
+- Can trigger reminders
+- Helps with planning and prioritization
+
+## Feature Settings
+
+### AI Features
+
+Control whether AI coworkers can assist in this project:
+
+- **Enabled**: AI coworkers can be assigned tasks, participate in chat
+- **Disabled**: AI features are turned off for this project
+
+<Info>
+  Disabling AI features might be appropriate for sensitive projects where AI interaction isn't desired.
+</Info>
+
+### Feature Toggles
+
+Some features can be enabled or disabled per project:
+
+| Feature | Description |
+|---------|-------------|
+| **Tasks** | Task management |
+| **Resources** | Knowledge base |
+| **Chat** | Project channel |
+| **Calendar** | Project-specific events |
+
+Most projects use all features, but you can disable unused ones to simplify the interface.
+
+## Member Settings
+
+### Project Members
+
+Control who has access to the project:
+
+**Adding members:**
+1. Go to project settings > Members
+2. Click **Add member**
+3. Select workspace members
+4. Choose their project role
+
+**Removing members:**
+1. Find the member in the list
+2. Click **Remove** or the X icon
+3. Confirm removal
+
+### Project Roles
+
+Project-specific roles determine what members can do:
+
+| Role | Capabilities |
+|------|-------------|
+| **Project Admin** | Full control over project settings and content |
+| **Editor** | Create and edit all content |
+| **Viewer** | View content but cannot edit |
+
+### Default Access
+
+Configure default access for new workspace members:
+
+- **Automatic access**: New members get access automatically
+- **Manual only**: Must be explicitly added
+
+## Notification Settings
+
+### Project Notifications
+
+Configure notifications for project activity:
+
+| Event | Notification Options |
+|-------|---------------------|
+| **New tasks** | All members, assignees only, none |
+| **Task updates** | All members, related members, none |
+| **New messages** | All, mentions only, none |
+| **Resource changes** | All, editors only, none |
+
+### Personal Override
+
+Individual members can override project notification settings in their personal preferences.
+
+## Danger Zone
+
+### Archiving the Project
+
+Archive projects that are complete or no longer active:
+
+<Steps>
+  <Step title="Go to project settings">
+    Open the settings page.
+  </Step>
+  <Step title="Find Archive option">
+    Scroll to the Danger Zone or Archive section.
+  </Step>
+  <Step title="Click Archive">
+    Confirm the action.
+  </Step>
+</Steps>
+
+**Archived projects:**
+- Hidden from normal navigation
+- All data preserved
+- Can be restored anytime
+- Don't count toward limits
+
+### Restoring Archived Projects
+
+1. View archived projects (filter or settings)
+2. Find the project
+3. Click **Restore**
+4. Project returns to active state
+
+### Deleting the Project
+
+<Warning>
+  Deletion is permanent. All tasks, resources, chat history, and settings will be lost forever.
+</Warning>
+
+<Steps>
+  <Step title="Go to Danger Zone">
+    Find the delete option in settings.
+  </Step>
+  <Step title="Click Delete">
+    Start the deletion process.
+  </Step>
+  <Step title="Confirm">
+    Type the project name to confirm.
+  </Step>
+  <Step title="Complete deletion">
+    The project and all its data are removed.
+  </Step>
+</Steps>
+
+## Integration Settings
+
+### Connected Services
+
+If your workspace has integrations, projects may have specific settings:
+
+- **Calendar sync**: Which calendars sync with this project
+- **Notifications**: Where project notifications go
+- **Automations**: Project-specific automation rules
+
+### Webhooks
+
+For advanced integrations, configure webhooks:
+
+1. Go to project settings > Integrations
+2. Add webhook endpoints
+3. Select events to trigger webhooks
+4. Save configuration
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Set up projects completely">
+    When creating a new project, take time to configure all settings properly. It's easier than fixing them later.
+  </Accordion>
+
+  <Accordion title="Use descriptive descriptions">
+    A good project description saves time explaining the project to new team members.
+  </Accordion>
+
+  <Accordion title="Choose prefixes wisely">
+    Pick a prefix you can live with long-term. Changing it later affects task ID continuity.
+  </Accordion>
+
+  <Accordion title="Review member access">
+    Periodically check who has access to projects. Remove members who no longer need access.
+  </Accordion>
+
+  <Accordion title="Archive instead of delete">
+    When in doubt, archive rather than delete. You can always delete later, but you can't recover deleted projects.
+  </Accordion>
+</AccordionGroup>
+
+## Settings Reference
+
+### Quick Reference Table
+
+| Setting | Location | Who Can Change |
+|---------|----------|---------------|
+| Name | General | Project Admin |
+| Description | General | Project Admin |
+| Prefix | General | Project Admin |
+| Area | General | Project Admin |
+| Status | General | Project Admin |
+| Due Date | General | Project Admin |
+| Members | Members | Project Admin |
+| AI Features | Features | Project Admin |
+| Notifications | Notifications | Project Admin (default), All (personal) |
+| Archive/Delete | Danger Zone | Project Admin |
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Can't change project settings">
+    - Verify you're a Project Admin
+    - Check if the project is archived
+    - Contact your workspace admin for permissions
+  </Accordion>
+
+  <Accordion title="Members not receiving notifications">
+    - Check project notification settings
+    - Verify individual member notification preferences
+    - Ensure they have proper access to the project
+  </Accordion>
+
+  <Accordion title="Can't find archived project">
+    - Enable "Show archived" in view filters
+    - Search by project name
+    - Check if it was deleted instead of archived
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Inviting Members" icon="user-plus" href="/collaboration/inviting-members">
+    Add team members to your project.
+  </Card>
+  <Card title="Roles & Permissions" icon="user-shield" href="/collaboration/roles-permissions">
+    Understand access control in detail.
+  </Card>
+</CardGroup>

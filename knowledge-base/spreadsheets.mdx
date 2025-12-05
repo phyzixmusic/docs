@@ -1,0 +1,246 @@
+---
+title: "Spreadsheets"
+description: "Create and manage tabular data with powerful spreadsheet features"
+---
+
+Spreadsheets in Trilo let you work with structured data, create tables, and organize information in rows and columns. They're perfect for tracking data, creating lists, and managing information that fits a tabular format.
+
+## Creating a Spreadsheet
+
+<Steps>
+  <Step title="Navigate to Resources">
+    Open a project and click on **Resources** in the navigation.
+  </Step>
+  <Step title="Click New">
+    Click the **+ New** button.
+  </Step>
+  <Step title="Select Spreadsheet">
+    Choose **Spreadsheet** from the dropdown menu.
+  </Step>
+  <Step title="Name your spreadsheet">
+    Give it a descriptive name that reflects its contents.
+  </Step>
+</Steps>
+
+## Working with Cells
+
+### Entering Data
+
+- **Click** any cell to select it
+- **Type** to enter data directly
+- **Tab** to move to the next cell
+- **Enter** to move to the cell below
+- **Arrow keys** to navigate between cells
+
+### Selecting Cells
+
+- **Single cell**: Click on the cell
+- **Range**: Click and drag, or Shift + click
+- **Column**: Click the column header
+- **Row**: Click the row number
+- **All cells**: Click the corner button or `Cmd/Ctrl + A`
+
+### Cell Types
+
+Cells automatically detect the type of data you enter:
+
+| Type | Examples | Features |
+|------|----------|----------|
+| **Text** | Names, descriptions | Left-aligned |
+| **Number** | 42, 3.14, -100 | Right-aligned, calculations |
+| **Date** | 2024-01-15, Jan 15 | Date formatting |
+| **Currency** | $100, €50 | Currency symbols |
+| **Percentage** | 50%, 0.5 | Percentage display |
+
+### Formatting Cells
+
+Select cells and use the toolbar to:
+
+- **Bold**, **italic**, or **underline** text
+- Change **text color** or **background color**
+- Adjust **alignment** (left, center, right)
+- Change **number format** (currency, percentage, date)
+
+## Columns and Rows
+
+### Adding Columns
+
+- **Right-click** a column header and select **Insert column left/right**
+- Click the **+** button at the end of the header row
+
+### Adding Rows
+
+- **Right-click** a row number and select **Insert row above/below**
+- Click the **+** button at the bottom of the spreadsheet
+
+### Resizing
+
+- **Drag** the border between column headers to resize width
+- **Drag** the border between row numbers to resize height
+- **Double-click** a column border to auto-fit width to content
+
+### Deleting
+
+- **Right-click** a column header or row number
+- Select **Delete column** or **Delete row**
+
+### Reordering
+
+- **Drag** column headers or row numbers to reorder
+- Drop in the desired position
+
+## Sorting and Filtering
+
+### Sorting Data
+
+Sort your data by any column:
+
+1. Click the column header dropdown (arrow icon)
+2. Select **Sort A to Z** or **Sort Z to A**
+3. For numbers: **Sort smallest to largest** or vice versa
+
+### Filtering Data
+
+Show only the data you need:
+
+1. Click the filter icon in a column header
+2. Choose filter criteria:
+   - **Text filters**: Contains, starts with, equals
+   - **Number filters**: Greater than, less than, between
+   - **Date filters**: Before, after, between
+3. Apply the filter to show matching rows
+
+<Tip>
+  Combine filters on multiple columns for more specific results.
+</Tip>
+
+## Formulas
+
+Use formulas to calculate values automatically.
+
+### Basic Formulas
+
+Start any formula with `=`:
+
+| Formula | What it does |
+|---------|--------------|
+| `=A1+B1` | Add values |
+| `=A1-B1` | Subtract values |
+| `=A1*B1` | Multiply values |
+| `=A1/B1` | Divide values |
+
+### Common Functions
+
+| Function | Example | Description |
+|----------|---------|-------------|
+| `SUM` | `=SUM(A1:A10)` | Add up a range |
+| `AVERAGE` | `=AVERAGE(B1:B10)` | Calculate average |
+| `COUNT` | `=COUNT(C1:C10)` | Count numbers |
+| `MAX` | `=MAX(D1:D10)` | Find largest value |
+| `MIN` | `=MIN(D1:D10)` | Find smallest value |
+| `IF` | `=IF(A1>10,"Yes","No")` | Conditional logic |
+
+### Cell References
+
+- **Relative**: `A1` — Changes when copied
+- **Absolute**: `$A$1` — Stays fixed when copied
+- **Mixed**: `$A1` or `A$1` — Partially fixed
+
+## Importing and Exporting
+
+### Import Data
+
+Bring in data from other sources:
+
+<Steps>
+  <Step title="Click Import">
+    In your spreadsheet, click the **Import** button.
+  </Step>
+  <Step title="Choose file">
+    Select a CSV or Excel file from your computer.
+  </Step>
+  <Step title="Map columns">
+    Match the imported columns to your spreadsheet columns if needed.
+  </Step>
+  <Step title="Confirm">
+    Click **Import** to bring in the data.
+  </Step>
+</Steps>
+
+Supported formats:
+- **CSV** (Comma-separated values)
+- **Excel** (.xlsx, .xls)
+
+### Export Data
+
+Share your data outside Trilo:
+
+1. Click the **Export** button or **...** menu
+2. Choose your format (CSV or Excel)
+3. The file will download to your computer
+
+## Collaboration
+
+### Real-Time Editing
+
+Multiple team members can work on the same spreadsheet:
+
+- See other users' selections highlighted
+- Watch changes appear in real-time
+- Avatars show who's currently viewing
+
+### Comments
+
+Add comments to discuss specific cells:
+
+1. Right-click a cell
+2. Select **Add comment**
+3. Type your comment and press Enter
+4. Team members will see a indicator on the cell
+
+## Keyboard Shortcuts
+
+| Action | Shortcut |
+|--------|----------|
+| Copy | `Cmd/Ctrl + C` |
+| Paste | `Cmd/Ctrl + V` |
+| Cut | `Cmd/Ctrl + X` |
+| Undo | `Cmd/Ctrl + Z` |
+| Redo | `Cmd/Ctrl + Shift + Z` |
+| Select all | `Cmd/Ctrl + A` |
+| Bold | `Cmd/Ctrl + B` |
+| Delete content | `Delete` or `Backspace` |
+| Edit cell | `F2` or `Enter` |
+| Navigate | Arrow keys |
+| Move to next cell | `Tab` |
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Use headers">
+    Always include a header row with clear column names. This makes your data easier to understand and improves filtering.
+  </Accordion>
+
+  <Accordion title="Keep data consistent">
+    Use the same format within a column (e.g., all dates in the same format, consistent currency symbols).
+  </Accordion>
+
+  <Accordion title="Freeze important rows/columns">
+    Freeze header rows and key columns so they stay visible when scrolling through large datasets.
+  </Accordion>
+
+  <Accordion title="Use formulas for calculations">
+    Instead of manually calculating totals or averages, use formulas. They update automatically when data changes.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Boards" icon="chalkboard" href="/knowledge-base/boards">
+    Learn about visual whiteboards.
+  </Card>
+  <Card title="Sharing" icon="share" href="/knowledge-base/sharing">
+    Share spreadsheets with your team or externally.
+  </Card>
+</CardGroup>

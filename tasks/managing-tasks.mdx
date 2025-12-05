@@ -1,0 +1,296 @@
+---
+title: "Managing Tasks"
+description: "Update, organize, and track your tasks effectively"
+---
+
+Once tasks are created, you'll need to manage them through their lifecycle. This guide covers everything from updating status to archiving completed work.
+
+## Opening a Task
+
+Click on any task to open its detail view, where you can:
+
+- View and edit all task properties
+- Add or update the description
+- See and add attachments
+- Review the activity history
+- Add comments and updates
+
+## Updating Task Status
+
+### Quick Status Change
+
+The fastest way to update status:
+
+**In List View:**
+- Click the status badge on any task
+- Select the new status from the dropdown
+
+**In Kanban View:**
+- Drag the task card to a different column
+- Drop it in the new status column
+
+**In Table View:**
+- Click the status cell
+- Select from the dropdown
+
+### Status Workflow
+
+Tasks typically flow through these stages:
+
+```
+Backlog → To Do → In Progress → Done
+```
+
+But you can move tasks to any status at any time—there's no enforced linear workflow.
+
+### Bulk Status Updates
+
+Update multiple tasks at once:
+
+<Steps>
+  <Step title="Select tasks">
+    Use checkboxes to select multiple tasks, or Shift+click for a range.
+  </Step>
+  <Step title="Open bulk actions">
+    A toolbar appears with bulk action options.
+  </Step>
+  <Step title="Choose action">
+    Select "Change status" and pick the new status.
+  </Step>
+  <Step title="Confirm">
+    All selected tasks are updated.
+  </Step>
+</Steps>
+
+## Editing Tasks
+
+### Inline Editing
+
+Edit properties directly from list or table views:
+
+- Click on any editable field
+- Make your change
+- Click away or press Enter to save
+
+### Full Edit Mode
+
+For comprehensive editing:
+
+1. Click on the task to open it
+2. Edit any field in the detail view
+3. Changes save automatically
+
+### Editable Properties
+
+| Property | How to Edit |
+|----------|-------------|
+| **Title** | Click and type |
+| **Status** | Click dropdown or drag (Kanban) |
+| **Priority** | Click dropdown |
+| **Assignee** | Click and select team member |
+| **Due Date** | Click and pick date |
+| **Description** | Click description area and type |
+
+## Task Activity
+
+### Activity Log
+
+Every task maintains a complete history:
+
+- **Created**: When and by whom
+- **Status changes**: Each transition with timestamp
+- **Edits**: What changed and who made the change
+- **Assignments**: When assignee changed
+- **Comments**: Discussion thread
+
+### Tracking Changes
+
+The activity log shows:
+
+```
+Jan 15, 2:30 PM - Sarah moved this task to "In Progress"
+Jan 15, 10:00 AM - Alex assigned this task to Sarah
+Jan 14, 4:45 PM - Alex created this task
+```
+
+This helps you understand a task's journey and who's been involved.
+
+## Organizing Tasks
+
+### Sorting
+
+Sort tasks in list and table views by:
+
+- **Priority**: Urgent first or Low first
+- **Due Date**: Upcoming first or furthest first
+- **Created**: Newest or oldest first
+- **Title**: Alphabetical
+- **Status**: By workflow stage
+
+### Moving Tasks Between Projects
+
+To move a task to a different project:
+
+<Steps>
+  <Step title="Open the task">
+    Click to view task details.
+  </Step>
+  <Step title="Click More options">
+    Find the **...** menu.
+  </Step>
+  <Step title="Select Move to...">
+    Choose the destination project.
+  </Step>
+  <Step title="Confirm">
+    The task moves and gets a new ID based on the new project's prefix.
+  </Step>
+</Steps>
+
+<Warning>
+  Moving a task changes its ID and may affect who has access to it based on project permissions.
+</Warning>
+
+## Archiving and Deleting
+
+### Archiving Tasks
+
+Archive completed tasks to keep your active list clean:
+
+1. Open the task
+2. Click **...** menu
+3. Select **Archive**
+
+Archived tasks:
+- Are hidden from default views
+- Can be viewed in the archive filter
+- Can be restored if needed
+- Preserve all history
+
+### Viewing Archived Tasks
+
+To see archived tasks:
+
+1. Go to Tasks in your project
+2. Click the filter options
+3. Enable "Show archived" or filter by archived status
+
+### Restoring Tasks
+
+Bring archived tasks back:
+
+1. View archived tasks (see above)
+2. Open the archived task
+3. Click **Restore**
+4. The task returns to its previous status
+
+### Deleting Tasks
+
+Permanently remove a task:
+
+1. Open the task
+2. Click **...** menu
+3. Select **Delete**
+4. Confirm the deletion
+
+<Warning>
+  Deleted tasks cannot be recovered. Use archive instead if you might need the task later.
+</Warning>
+
+## Due Date Management
+
+### Setting Due Dates
+
+1. Click the due date field
+2. Pick a date from the calendar
+3. Optionally add a specific time
+
+### Viewing Due Dates
+
+Tasks with due dates show indicators:
+
+- **Upcoming**: Normal display
+- **Due today**: Highlighted
+- **Overdue**: Red indicator
+
+### Changing Due Dates
+
+- Click the existing due date
+- Select a new date
+- Or click **Clear** to remove the due date
+
+## Attachments
+
+### Adding Attachments
+
+1. Open the task
+2. Click the attachment area or drag files
+3. Upload images, documents, or other files
+
+### Managing Attachments
+
+- **View**: Click to open/preview
+- **Download**: Click download icon
+- **Delete**: Click the X to remove
+
+### Attachment Types
+
+Supported files include:
+- Images (PNG, JPG, GIF)
+- Documents (PDF, Word, Excel)
+- Code files
+- Design files
+
+## Working with Subtasks
+
+For complex tasks, use checklists in the description:
+
+```markdown
+## Checklist
+- [ ] First subtask
+- [ ] Second subtask
+- [ ] Third subtask
+```
+
+Check items off as you complete them by clicking the checkbox.
+
+## Keyboard Shortcuts
+
+| Action | Shortcut |
+|--------|----------|
+| New task | `T` |
+| Open selected task | `Enter` |
+| Close task detail | `Esc` |
+| Navigate tasks | Arrow keys |
+| Select task | `Space` |
+| Quick edit title | Click and type |
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Update status promptly">
+    Change task status as you start and finish work. This keeps everyone informed and makes reporting accurate.
+  </Accordion>
+
+  <Accordion title="Archive instead of delete">
+    Unless a task was created by mistake, archive rather than delete. You never know when you'll need to reference past work.
+  </Accordion>
+
+  <Accordion title="Keep tasks current">
+    Regularly review your tasks. Update outdated descriptions, adjust due dates, and archive completed work.
+  </Accordion>
+
+  <Accordion title="Use the activity log">
+    When you need context on a task, check the activity log to see what's happened and who's been involved.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Views and Filters" icon="filter" href="/tasks/views-and-filters">
+    Master the different ways to view your tasks.
+  </Card>
+  <Card title="Assignments" icon="user-plus" href="/tasks/assignments">
+    Learn about task assignment features.
+  </Card>
+</CardGroup>

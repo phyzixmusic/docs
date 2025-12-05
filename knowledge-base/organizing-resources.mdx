@@ -1,0 +1,293 @@
+---
+title: "Organizing Resources"
+description: "Best practices for organizing your knowledge base for maximum efficiency"
+---
+
+A well-organized knowledge base helps your team find information quickly and keeps everyone aligned. This guide covers strategies and features for keeping your resources organized.
+
+## Organization Hierarchy
+
+Trilo uses a three-level hierarchy to organize content:
+
+```
+Workspace
+├── Area (e.g., "Engineering")
+│   ├── Project (e.g., "API Development")
+│   │   ├── Resources (Pages, Spreadsheets, Boards)
+│   │   ├── Tasks
+│   │   └── Chat
+│   └── Project (e.g., "Frontend")
+│       └── ...
+└── Area (e.g., "Marketing")
+    └── Project (e.g., "Q1 Campaign")
+        └── ...
+```
+
+### Areas
+
+Areas are high-level categories for grouping related projects:
+
+**Common area structures:**
+- **By department**: Engineering, Marketing, Sales, Operations
+- **By client**: Client A, Client B, Internal
+- **By initiative**: Product Launch, Growth, Infrastructure
+- **By time**: Q1 2024, Q2 2024, Ongoing
+
+### Projects
+
+Projects contain the actual work and resources:
+
+- Each project has its own Resources section
+- Projects have dedicated chat channels
+- Tasks are organized within projects
+- Projects can have their own member permissions
+
+## Organizing Within Projects
+
+### Resource List
+
+The Resources section shows all resources in a project:
+
+- **List view**: See all resources with key details
+- **Sort options**: By name, date created, date modified
+- **Filter**: Show only pages, spreadsheets, or boards
+
+### Naming Conventions
+
+Consistent naming helps everyone find what they need:
+
+<Tip>
+  Establish naming conventions early and document them for your team.
+</Tip>
+
+**Good naming patterns:**
+
+| Type | Pattern | Example |
+|------|---------|---------|
+| Meeting notes | `[Date] Meeting - [Topic]` | `2024-01-15 Meeting - Sprint Planning` |
+| Documentation | `[System] - [Topic]` | `API - Authentication Guide` |
+| Templates | `[Template] [Type]` | `[Template] Project Brief` |
+| Versions | `[Name] v[Number]` | `Product Spec v2` |
+
+### Using Prefixes
+
+Prefixes help categorize resources at a glance:
+
+- `[Draft]` - Work in progress
+- `[Archive]` - Historical reference
+- `[Template]` - Reusable starting point
+- `[WIP]` - Active work, not final
+
+## Active Work vs. Archive
+
+### Managing Active Resources
+
+Keep your resource list focused on current work:
+
+- Pin frequently-used resources to keep them at the top
+- Review resources regularly and archive what's no longer active
+- Use clear status indicators in names if helpful
+
+### Archiving Resources
+
+Archive resources that are no longer actively used but need to be preserved:
+
+<Steps>
+  <Step title="Select the resource">
+    Click on the resource you want to archive.
+  </Step>
+  <Step title="Open the menu">
+    Click the **...** menu in the top right.
+  </Step>
+  <Step title="Archive">
+    Select **Archive**. The resource will be moved to the archive.
+  </Step>
+</Steps>
+
+### Accessing Archived Resources
+
+To view archived resources:
+
+1. Go to the Resources section
+2. Click **View archive** or filter by archived status
+3. Archived resources appear grayed out
+4. Click **Restore** to bring a resource back to active status
+
+## Cross-Project Resources
+
+Sometimes resources are relevant to multiple projects.
+
+### Linking to Resources
+
+Reference resources from other projects:
+
+1. Copy the resource link from the **...** menu
+2. Paste the link in pages or chat messages
+3. Links are clickable and show preview cards
+
+### Moving Resources
+
+Move a resource to a different project:
+
+1. Open the resource
+2. Click **...** menu
+3. Select **Move to...**
+4. Choose the destination project
+5. Confirm the move
+
+<Warning>
+  Moving a resource may change who has access to it based on project permissions.
+</Warning>
+
+## Templates
+
+Create reusable templates for common resource types.
+
+### Creating a Template
+
+<Steps>
+  <Step title="Create a resource">
+    Create a page, spreadsheet, or board with the structure you want to reuse.
+  </Step>
+  <Step title="Add template content">
+    Add placeholder text, structure, and formatting.
+  </Step>
+  <Step title="Name it clearly">
+    Use a prefix like `[Template]` in the name.
+  </Step>
+  <Step title="Optional: Create a templates project">
+    Keep all templates in a dedicated project for easy access.
+  </Step>
+</Steps>
+
+### Using a Template
+
+1. Open the template resource
+2. Click **...** menu and select **Duplicate**
+3. Rename the duplicate for your specific use
+4. Move it to the appropriate project if needed
+5. Fill in the content
+
+### Template Ideas
+
+<CardGroup cols={2}>
+  <Card title="Meeting Notes" icon="clipboard">
+    - Date and attendees
+    - Agenda items
+    - Discussion notes
+    - Action items
+    - Next steps
+  </Card>
+  <Card title="Project Brief" icon="file-lines">
+    - Overview
+    - Goals and objectives
+    - Scope
+    - Timeline
+    - Stakeholders
+  </Card>
+  <Card title="Decision Log" icon="scale-balanced">
+    - Decision date
+    - Context
+    - Options considered
+    - Decision made
+    - Rationale
+  </Card>
+  <Card title="Sprint Retrospective" icon="rotate">
+    - What went well
+    - What could improve
+    - Action items
+    - Team feedback
+  </Card>
+</CardGroup>
+
+## Search and Discovery
+
+### Global Search
+
+Use search to find resources across your workspace:
+
+- Press `Cmd/Ctrl + K` to open search
+- Type keywords from the resource title or content
+- Results show recent items first
+- Click a result to open the resource
+
+### Search Tips
+
+- Search finds matches in titles and content
+- Use specific keywords for better results
+- Recent items appear higher in results
+- Filter by resource type if needed
+
+## Organization Best Practices
+
+<AccordionGroup>
+  <Accordion title="Keep it flat when possible">
+    Avoid creating too many nested levels. A flatter structure is easier to navigate and understand.
+  </Accordion>
+
+  <Accordion title="Archive regularly">
+    Schedule regular cleanup sessions to archive completed or outdated resources. This keeps your active view focused.
+  </Accordion>
+
+  <Accordion title="Document your system">
+    Create a "How We Organize" page that explains your team's conventions. This helps new team members get up to speed quickly.
+  </Accordion>
+
+  <Accordion title="Review and refine">
+    Your organization needs will evolve. Periodically review your structure and make adjustments as your team grows or changes.
+  </Accordion>
+
+  <Accordion title="Use consistent naming">
+    Agree on naming conventions as a team and stick to them. Consistency makes everything easier to find.
+  </Accordion>
+</AccordionGroup>
+
+## Example Structures
+
+### Small Team (5-10 people)
+
+```
+Workspace
+├── Products
+│   ├── Mobile App
+│   └── Web Platform
+├── Marketing
+│   └── Content
+└── Operations
+    └── Team Docs
+```
+
+### Growing Company (20-50 people)
+
+```
+Workspace
+├── Engineering
+│   ├── Backend Services
+│   ├── Frontend
+│   └── Infrastructure
+├── Product
+│   ├── Roadmap
+│   └── Research
+├── Marketing
+│   ├── Brand
+│   ├── Content
+│   └── Campaigns
+├── Sales
+│   ├── Prospects
+│   └── Customer Success
+└── Operations
+    ├── HR
+    ├── Finance
+    └── Company Docs
+```
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Sharing Resources" icon="share" href="/knowledge-base/sharing">
+    Learn how to share resources internally and externally.
+  </Card>
+  <Card title="Areas and Projects" icon="folder-tree" href="/workspaces/areas-and-projects">
+    Deep dive into workspace organization.
+  </Card>
+</CardGroup>

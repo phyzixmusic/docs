@@ -1,0 +1,331 @@
+---
+title: "Roles and Permissions"
+description: "Understand access control and what each role can do in Trilo"
+---
+
+Roles and permissions control what people can see and do in your workspace. Understanding these helps you set up appropriate access for everyone on your team.
+
+## Role Hierarchy
+
+Trilo has two levels of roles:
+
+1. **Workspace roles**: Control access across the entire workspace
+2. **Project roles**: Control access within specific projects
+
+### Workspace Roles
+
+| Role | Description |
+|------|-------------|
+| **Owner** | Full control including billing and deletion |
+| **Admin** | Manage members, settings, and all content |
+| **Member** | Create and edit in accessible projects |
+| **Guest** | Limited access to specific projects only |
+
+### Project Roles
+
+| Role | Description |
+|------|-------------|
+| **Project Admin** | Full control over the project |
+| **Editor** | Create and edit content |
+| **Viewer** | View-only access |
+
+## Workspace Roles in Detail
+
+### Owner
+
+The workspace owner has complete control:
+
+**Can do everything, plus:**
+- Access and modify billing
+- Delete the workspace
+- Transfer ownership
+- View all analytics
+
+**Notes:**
+- Every workspace has exactly one owner
+- Ownership can be transferred to another Admin
+- Usually the person who created the workspace
+
+### Admin
+
+Administrators manage the workspace day-to-day:
+
+**Can:**
+- Invite and remove members
+- Change member roles (except owner)
+- Access all projects
+- Modify workspace settings
+- Create and archive areas and projects
+- View workspace analytics
+
+**Cannot:**
+- Access billing (unless also owner)
+- Delete the workspace
+- Change the owner
+
+### Member
+
+Regular team members who do the work:
+
+**Can:**
+- Access projects they're added to
+- Create and edit content in their projects
+- Participate in chat
+- Manage their own tasks
+- Update their profile
+
+**Cannot:**
+- Access workspace settings
+- Invite new members
+- See projects they're not part of
+- Change other members' roles
+
+### Guest
+
+External collaborators with limited access:
+
+**Can:**
+- Access specific projects they're invited to
+- View and interact with allowed content
+- Participate in project chat
+- Be assigned tasks (if permitted)
+
+**Cannot:**
+- See other projects
+- View workspace members list
+- Access any settings
+- Invite others
+- See workspace structure outside their projects
+
+## Project Roles in Detail
+
+### Project Admin
+
+Full control within a specific project:
+
+**Can:**
+- Manage project settings
+- Add/remove project members
+- Change project member roles
+- Delete the project
+- All Editor capabilities
+
+### Editor
+
+Content creators and collaborators:
+
+**Can:**
+- Create and edit all content types
+- Manage tasks (create, edit, assign)
+- Upload resources
+- Participate in chat
+- Edit pages, spreadsheets, boards
+
+### Viewer
+
+Read-only access:
+
+**Can:**
+- View all project content
+- Read chat messages
+- See task lists
+
+**Cannot:**
+- Edit any content
+- Create tasks
+- Send messages (in some configurations)
+- Upload files
+
+## Permission Matrix
+
+### Workspace-Level Permissions
+
+| Action | Owner | Admin | Member | Guest |
+|--------|-------|-------|--------|-------|
+| View workspace settings | Yes | Yes | No | No |
+| Modify workspace settings | Yes | Yes | No | No |
+| Manage billing | Yes | No | No | No |
+| Invite members | Yes | Yes | No | No |
+| Remove members | Yes | Yes | No | No |
+| Create areas | Yes | Yes | No | No |
+| Create projects | Yes | Yes | Limited | No |
+| Access all projects | Yes | Yes | No | No |
+| Delete workspace | Yes | No | No | No |
+
+### Project-Level Permissions
+
+| Action | Project Admin | Editor | Viewer |
+|--------|--------------|--------|--------|
+| View project | Yes | Yes | Yes |
+| Manage project settings | Yes | No | No |
+| Add/remove members | Yes | No | No |
+| Create tasks | Yes | Yes | No |
+| Edit tasks | Yes | Yes | No |
+| Create resources | Yes | Yes | No |
+| Edit resources | Yes | Yes | No |
+| Send messages | Yes | Yes | Varies |
+| Delete project | Yes | No | No |
+
+## Managing Roles
+
+### Changing Workspace Roles
+
+<Steps>
+  <Step title="Go to Settings">
+    Navigate to **Settings > Members**.
+  </Step>
+  <Step title="Find the member">
+    Locate the person whose role you want to change.
+  </Step>
+  <Step title="Click the role">
+    Click on their current role.
+  </Step>
+  <Step title="Select new role">
+    Choose the new role from the dropdown.
+  </Step>
+  <Step title="Confirm">
+    Changes take effect immediately.
+  </Step>
+</Steps>
+
+**Who can change roles:**
+- Owners can change any role
+- Admins can change Member and Guest roles
+- No one can change their own role to a higher level
+
+### Changing Project Roles
+
+<Steps>
+  <Step title="Go to project settings">
+    Open the project and navigate to settings.
+  </Step>
+  <Step title="Select Members">
+    Go to the Members section.
+  </Step>
+  <Step title="Find the member">
+    Locate the person in the member list.
+  </Step>
+  <Step title="Change role">
+    Select their new project role.
+  </Step>
+</Steps>
+
+## Role Strategies
+
+### Small Teams (2-10 people)
+
+- **Owner**: Founder or team lead
+- **Admins**: 1-2 key team members
+- **Members**: Everyone else
+
+Keep it simple—most people can be Members.
+
+### Growing Teams (10-50 people)
+
+- **Owner**: CEO or department head
+- **Admins**: Team leads, department managers
+- **Members**: Regular employees
+- **Guests**: Contractors, external partners
+
+Use project roles to give specific people more control in their areas.
+
+### Enterprise (50+ people)
+
+- **Owner**: IT administrator or executive
+- **Admins**: Department heads, team leads
+- **Members**: Most employees
+- **Guests**: External collaborators, clients
+
+Use detailed project permissions and consider:
+- Limiting Admin count
+- Using Guests more liberally for external access
+- Project-level permissions for fine-grained control
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Start with minimal access">
+    Give people the minimum permissions they need. It's easier to grant more access than to restrict it later.
+  </Accordion>
+
+  <Accordion title="Limit Admin count">
+    Too many admins can lead to inconsistent settings and confusion. Keep Admin count low.
+  </Accordion>
+
+  <Accordion title="Use Guests for external people">
+    Always use Guest role for people outside your organization. This protects sensitive information.
+  </Accordion>
+
+  <Accordion title="Review permissions regularly">
+    Audit who has access periodically. Remove access for people who no longer need it.
+  </Accordion>
+
+  <Accordion title="Document your permission structure">
+    Write down who gets what role and why. This helps with consistency as your team grows.
+  </Accordion>
+</AccordionGroup>
+
+## Special Cases
+
+### Transferring Ownership
+
+To transfer workspace ownership:
+
+1. Both parties must have accounts
+2. Current owner initiates transfer
+3. New owner accepts
+4. Old owner becomes Admin
+
+### Temporary Elevated Access
+
+When someone needs temporary higher access:
+
+1. Elevate their role as needed
+2. Set a reminder to review
+3. Reduce role when no longer needed
+
+### Emergency Access
+
+If the owner is unavailable:
+- Admins can handle most operations
+- Contact Trilo support for ownership issues
+- Have a backup plan for critical access
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Member can't access a project">
+    - Check if they're added to the project
+    - Verify their project role allows access
+    - Ensure the project isn't archived
+  </Accordion>
+
+  <Accordion title="Can't change someone's role">
+    - Verify you have permission (Admin+ to change roles)
+    - You can't elevate someone above your own level
+    - Owners can only be changed through ownership transfer
+  </Accordion>
+
+  <Accordion title="Guest can see too much">
+    - Review which projects they're added to
+    - Check project-level permissions
+    - Remove from projects they shouldn't access
+  </Accordion>
+
+  <Accordion title="Member should be Admin">
+    - Only Owner or Admin can promote to Admin
+    - Go to Settings > Members
+    - Change their workspace role
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Inviting Members" icon="user-plus" href="/collaboration/inviting-members">
+    Add people to your workspace.
+  </Card>
+  <Card title="Real-time Collaboration" icon="users" href="/collaboration/real-time-collaboration">
+    Learn about working together.
+  </Card>
+</CardGroup>

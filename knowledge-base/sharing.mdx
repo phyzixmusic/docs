@@ -1,0 +1,243 @@
+---
+title: "Sharing Resources"
+description: "Share your knowledge base content with team members and external stakeholders"
+---
+
+Trilo makes it easy to share your knowledge base resources with the right people. Whether you're collaborating with your team or sharing with external stakeholders, you have flexible options for controlling access.
+
+## Internal Sharing
+
+### Team Access
+
+By default, resources are accessible to everyone who has access to the project:
+
+- **Workspace members** see resources in projects they belong to
+- **Project members** have full access to resources within their projects
+- **Admins** can access all resources in the workspace
+
+### Sharing Within Your Team
+
+To share a resource with a teammate:
+
+1. Send them the link directly (via chat, email, etc.)
+2. Mention the resource in project chat
+3. Link to it from another page
+
+<Tip>
+  Simply copying the URL from your browser and sharing it works for internal sharing—team members with project access can open it directly.
+</Tip>
+
+## Public Sharing
+
+Share resources with people outside your workspace using public links.
+
+### Making a Resource Public
+
+<Steps>
+  <Step title="Open the resource">
+    Navigate to the page, spreadsheet, or board you want to share.
+  </Step>
+  <Step title="Click Share">
+    Click the **Share** button in the top right corner.
+  </Step>
+  <Step title="Enable public access">
+    Toggle **Public access** to on.
+  </Step>
+  <Step title="Copy the link">
+    Copy the public link to share with anyone.
+  </Step>
+</Steps>
+
+### Public Link Types
+
+| Resource Type | Public Access |
+|---------------|---------------|
+| **Pages** | View-only access to the document |
+| **Spreadsheets** | View-only access to the data |
+| **Boards** | View-only access to the whiteboard |
+
+### Custom URLs
+
+Make your public links more professional with custom URLs:
+
+<Steps>
+  <Step title="Open sharing settings">
+    Click **Share** on your resource.
+  </Step>
+  <Step title="Set custom slug">
+    Enter a custom slug (e.g., `product-roadmap` instead of a random string).
+  </Step>
+  <Step title="Save">
+    Your new URL will be `your-workspace.trilo.app/public/product-roadmap`.
+  </Step>
+</Steps>
+
+<Info>
+  Custom slugs must be unique within your workspace and can only contain letters, numbers, and hyphens.
+</Info>
+
+### Managing Public Access
+
+You can modify public access at any time:
+
+- **Disable**: Toggle off public access to revoke the link
+- **Change URL**: Update the custom slug (old links will stop working)
+- **Regenerate**: Create a new random link if the current one was shared too widely
+
+<Warning>
+  When you disable public access or change the URL, anyone with the old link will no longer be able to access the resource.
+</Warning>
+
+## Public Page Settings
+
+When sharing pages publicly, you can customize what viewers see:
+
+### Metadata
+
+Set the information displayed when the link is shared on social media or messaging apps:
+
+- **Title**: The page title or a custom title
+- **Description**: A brief summary of the content
+- **Image**: A preview image for link cards
+
+### Appearance
+
+- Choose whether to show the page title
+- Select whether to display the last updated date
+- Decide if you want to show the author
+
+## Sharing Best Practices
+
+<AccordionGroup>
+  <Accordion title="Use descriptive custom URLs">
+    Instead of random strings, use meaningful slugs like `api-documentation` or `brand-guidelines`. They're easier to share and look more professional.
+  </Accordion>
+
+  <Accordion title="Review before sharing">
+    Always review content before making it public. Check for sensitive information, incomplete sections, or internal comments.
+  </Accordion>
+
+  <Accordion title="Track what's public">
+    Periodically review your public resources. Disable access for outdated content or resources no longer needed externally.
+  </Accordion>
+
+  <Accordion title="Use appropriate access levels">
+    Only make resources public when necessary. For trusted external collaborators, consider inviting them as guests to specific projects instead.
+  </Accordion>
+</AccordionGroup>
+
+## Guest Access
+
+For more controlled external sharing, invite external users as guests.
+
+### Inviting Guests
+
+<Steps>
+  <Step title="Go to Settings">
+    Click **Settings** in the sidebar.
+  </Step>
+  <Step title="Select Members">
+    Click on **Members**.
+  </Step>
+  <Step title="Invite">
+    Enter the guest's email and select the **Guest** role.
+  </Step>
+  <Step title="Assign to projects">
+    Choose which specific projects the guest can access.
+  </Step>
+</Steps>
+
+### Guest vs. Public Access
+
+| Feature | Public Link | Guest Access |
+|---------|------------|--------------|
+| **Authentication** | None required | Sign-in required |
+| **Tracking** | Anonymous views | Named user activity |
+| **Scope** | Single resource | Multiple resources in a project |
+| **Interaction** | View only | Can comment and interact |
+| **Revocation** | Change link | Remove guest access |
+
+## Embedding Resources
+
+Embed your public resources in external websites or documentation.
+
+### Getting the Embed Code
+
+1. Make the resource public (see above)
+2. Click **Share** and select **Embed**
+3. Copy the embed code (iframe)
+4. Paste into your website's HTML
+
+### Embed Options
+
+- **Width/Height**: Adjust dimensions to fit your layout
+- **Border**: Show or hide the frame border
+- **Toolbar**: Show or hide editing tools (view-only for public)
+
+<Info>
+  Embedded resources update automatically when you edit the original resource in Trilo.
+</Info>
+
+## Link Previews
+
+When you share Trilo links in chat or other apps, they show rich previews:
+
+- **Title**: The resource name
+- **Description**: Brief content preview
+- **Image**: Thumbnail or custom image
+- **Type**: Icon showing whether it's a page, spreadsheet, or board
+
+This helps recipients understand what they're clicking before opening the link.
+
+## Security Considerations
+
+<AccordionGroup>
+  <Accordion title="Be careful with sensitive data">
+    Never make resources containing sensitive information public. This includes customer data, internal financials, passwords, API keys, or personal information.
+  </Accordion>
+
+  <Accordion title="Audit public resources regularly">
+    Set a reminder to review public resources quarterly. Remove public access from resources that no longer need to be shared externally.
+  </Accordion>
+
+  <Accordion title="Use guests for ongoing collaboration">
+    If you need to share multiple resources with external collaborators over time, guest access is more secure than multiple public links.
+  </Accordion>
+
+  <Accordion title="Consider who might find the link">
+    Public links can be shared by anyone who has them. If the content is sensitive, use guest access instead.
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Public link not working">
+    - Check that public access is still enabled
+    - Verify the URL hasn't changed (custom slug update)
+    - Ensure the resource hasn't been deleted or archived
+  </Accordion>
+
+  <Accordion title="Guest can't access resource">
+    - Confirm the guest was added to the correct project
+    - Check that the invitation was accepted
+    - Verify the resource is in a project the guest has access to
+  </Accordion>
+
+  <Accordion title="Link preview not showing correctly">
+    - Update the metadata in sharing settings
+    - Wait for cache to refresh (can take a few minutes)
+    - Try sharing the link again after updating
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Roles and Permissions" icon="user-shield" href="/collaboration/roles-permissions">
+    Understand access control in detail.
+  </Card>
+  <Card title="Inviting Members" icon="user-plus" href="/collaboration/inviting-members">
+    Learn how to add teammates and guests.
+  </Card>
+</CardGroup>

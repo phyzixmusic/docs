@@ -1,0 +1,281 @@
+---
+title: "Creating Tasks"
+description: "Learn how to create new tasks and set them up for success"
+---
+
+Creating tasks in Trilo is quick and flexible. Whether you're capturing a quick idea or setting up a detailed work item, this guide covers all the ways to create and configure tasks.
+
+## Quick Task Creation
+
+The fastest way to create a task:
+
+<Steps>
+  <Step title="Open Tasks">
+    Navigate to a project and click **Tasks** in the navigation.
+  </Step>
+  <Step title="Press T or click New Task">
+    Use the keyboard shortcut `T` or click **+ New Task**.
+  </Step>
+  <Step title="Enter a title">
+    Type a clear, actionable title for your task.
+  </Step>
+  <Step title="Press Enter">
+    Hit Enter to create the task with default settings.
+  </Step>
+</Steps>
+
+The task is created immediately—you can add more details later.
+
+## Detailed Task Creation
+
+For tasks that need more information upfront:
+
+<Steps>
+  <Step title="Click + New Task">
+    Open the task creation form.
+  </Step>
+  <Step title="Fill in the title">
+    Enter a clear, descriptive title.
+  </Step>
+  <Step title="Add a description">
+    Expand the description field and add context, requirements, or acceptance criteria.
+  </Step>
+  <Step title="Set properties">
+    Configure status, priority, assignee, and due date.
+  </Step>
+  <Step title="Add attachments">
+    Upload any relevant files or screenshots.
+  </Step>
+  <Step title="Create">
+    Click **Create** to add the task.
+  </Step>
+</Steps>
+
+## Task Properties
+
+### Title
+
+Write clear, actionable titles that describe what needs to be done:
+
+<Tip>
+  Good task titles start with a verb and are specific. Instead of "Homepage," write "Update homepage hero section with new messaging."
+</Tip>
+
+**Examples of good titles:**
+- "Fix login button not responding on mobile"
+- "Write documentation for API authentication"
+- "Design icons for navigation menu"
+- "Review and merge PR #142"
+
+### Status
+
+Choose the appropriate starting status:
+
+| Status | When to Use |
+|--------|-------------|
+| **Backlog** | Future work, not yet planned |
+| **To Do** | Planned for upcoming work |
+| **In Progress** | Starting work immediately |
+| **Done** | Already completed (rare for new tasks) |
+
+Most new tasks start as **To Do** or **Backlog**.
+
+### Priority
+
+Set the urgency level:
+
+| Priority | Description | Examples |
+|----------|-------------|----------|
+| **Low** | Nice to have, can wait | Minor improvements, polish items |
+| **Medium** | Standard work | Regular features, typical fixes |
+| **High** | Important, should be addressed soon | Key features, significant bugs |
+| **Urgent** | Critical, needs immediate attention | Production issues, blockers |
+
+<Warning>
+  Avoid marking everything as urgent or high priority—it defeats the purpose of prioritization.
+</Warning>
+
+### Assignee
+
+Assign the task to:
+
+- **Specific team member**: The person responsible for completing the task
+- **AI coworker**: For tasks that can be automated or AI-assisted
+- **Unassigned**: When you don't know who should work on it yet
+
+### Due Date
+
+Set a deadline when the task needs to be completed:
+
+1. Click the due date field
+2. Select a date from the calendar
+3. Optionally set a time for specific deadlines
+
+**Due date tips:**
+- Set realistic deadlines
+- Consider dependencies on other tasks
+- Leave buffer time for review
+
+### Description
+
+Use the description for:
+
+- **Context**: Why this task matters
+- **Requirements**: What needs to be done
+- **Acceptance criteria**: How you'll know it's complete
+- **Resources**: Links to designs, documentation, or references
+
+The description supports markdown formatting:
+
+```markdown
+## Overview
+Brief explanation of the task.
+
+## Requirements
+- First requirement
+- Second requirement
+- Third requirement
+
+## Resources
+- [Design mockup](link)
+- [Technical spec](link)
+```
+
+### Attachments
+
+Add files to provide context:
+
+1. Click the attachment area or drag files directly
+2. Upload images, documents, or other files
+3. Add multiple attachments if needed
+
+Common attachments:
+- Screenshots showing bugs or expected behavior
+- Design files or mockups
+- Reference documents
+- Exported data files
+
+## Creating Tasks from Different Views
+
+### From List View
+
+1. Click **+ New Task** at the top
+2. Or click in the "Add task" area at the bottom of the list
+3. Fill in details as needed
+
+### From Kanban Board
+
+1. Click **+** at the bottom of any column
+2. The task is created with that column's status
+3. Add details inline or open the full task view
+
+### From Table View
+
+1. Click the **+** button at the bottom
+2. Fill in columns directly
+3. Tab between fields for quick entry
+
+## Creating Multiple Tasks
+
+When you have several tasks to add:
+
+### Batch Entry
+
+1. Use the quick create shortcut (`T`)
+2. Enter a title and press Enter
+3. Immediately start typing the next title
+4. Repeat for all tasks
+5. Go back and add details as needed
+
+### From Chat
+
+When discussing tasks in project chat:
+1. Mention creating a task
+2. AI coworkers or team members can create tasks directly
+3. The task is automatically linked to the conversation
+
+## Task IDs
+
+Every task gets a unique ID based on the project:
+
+- **Format**: `[PREFIX]-[NUMBER]`
+- **Example**: If your project prefix is "PROD", tasks are `PROD-1`, `PROD-2`, etc.
+
+Use task IDs to:
+- Reference tasks in chat or documentation
+- Search for specific tasks
+- Link tasks in descriptions
+
+## Templates and Patterns
+
+For recurring task types, establish patterns:
+
+### Bug Reports
+
+```
+Title: [Bug] Brief description of the issue
+Priority: Based on severity
+Description:
+- Steps to reproduce
+- Expected behavior
+- Actual behavior
+- Screenshots/recordings
+```
+
+### Feature Requests
+
+```
+Title: [Feature] What the feature does
+Priority: Based on importance
+Description:
+- User story / use case
+- Requirements
+- Design link (if available)
+- Acceptance criteria
+```
+
+### Maintenance Tasks
+
+```
+Title: [Maintenance] Specific maintenance activity
+Priority: Medium (unless critical)
+Description:
+- What needs to be done
+- Why it's needed
+- Any dependencies
+```
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Write actionable titles">
+    Start with a verb that describes what needs to happen. "Update," "Fix," "Create," "Review," "Implement" are all good choices.
+  </Accordion>
+
+  <Accordion title="Set realistic priorities">
+    Reserve urgent and high priorities for truly important items. If everything is urgent, nothing is.
+  </Accordion>
+
+  <Accordion title="Break down large tasks">
+    If a task will take more than a day or two, consider breaking it into smaller subtasks.
+  </Accordion>
+
+  <Accordion title="Add enough context">
+    Include enough detail in the description that someone else (or future you) can understand and complete the task.
+  </Accordion>
+
+  <Accordion title="Set due dates thoughtfully">
+    Only set due dates when there's an actual deadline. Arbitrary dates create false urgency.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Managing Tasks" icon="list-check" href="/tasks/managing-tasks">
+    Learn how to update and organize existing tasks.
+  </Card>
+  <Card title="Views and Filters" icon="filter" href="/tasks/views-and-filters">
+    Explore different ways to view your tasks.
+  </Card>
+</CardGroup>

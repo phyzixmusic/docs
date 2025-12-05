@@ -1,0 +1,336 @@
+---
+title: "Booking Pages"
+description: "Let others schedule time with you through public booking links"
+---
+
+Booking pages allow external people to schedule meetings with you without the back-and-forth of finding a time. Share your booking link and let others pick a time that works for both of you.
+
+## How Booking Works
+
+1. **You set up** your booking page with available times
+2. **You share** the booking link with others
+3. **They choose** a time from your available slots
+4. **Both calendars** update with the meeting
+
+## Setting Up Your Booking Page
+
+### Enable Booking
+
+<Steps>
+  <Step title="Go to Settings">
+    Click **Settings** in the sidebar.
+  </Step>
+  <Step title="Select Booking">
+    Find the **Booking** or **Scheduling** section.
+  </Step>
+  <Step title="Enable booking page">
+    Toggle on your public booking page.
+  </Step>
+  <Step title="Configure settings">
+    Set up your availability and preferences.
+  </Step>
+</Steps>
+
+### Basic Settings
+
+Configure your booking page essentials:
+
+| Setting | Description |
+|---------|-------------|
+| **Display name** | The name shown on your booking page |
+| **Bio** | Brief description about you or your role |
+| **Booking link** | Your unique URL (customizable) |
+| **Timezone** | Your default timezone for availability |
+
+## Availability Settings
+
+### Working Hours
+
+Set when you're available for bookings:
+
+<Steps>
+  <Step title="Define work days">
+    Select which days of the week you accept bookings.
+  </Step>
+  <Step title="Set daily hours">
+    For each day, set start and end times.
+  </Step>
+  <Step title="Add breaks">
+    Optionally exclude lunch or other regular breaks.
+  </Step>
+</Steps>
+
+**Example configuration:**
+- Monday-Friday: 9:00 AM - 5:00 PM
+- Lunch break: 12:00 PM - 1:00 PM
+- Weekends: Unavailable
+
+### Buffer Time
+
+Add padding around meetings:
+
+| Buffer Type | Purpose |
+|-------------|---------|
+| **Before** | Time before meetings (preparation) |
+| **After** | Time after meetings (notes, decompression) |
+
+**Example:**
+- 15 minutes before each meeting
+- 10 minutes after each meeting
+
+This prevents back-to-back scheduling.
+
+### Minimum Notice
+
+Set how far in advance bookings must be made:
+
+- **1 hour**: Same-day bookings allowed
+- **24 hours**: Next-day minimum
+- **48 hours**: Two-day advance notice
+- **1 week**: Week-ahead planning
+
+### Maximum Advance
+
+Limit how far ahead people can book:
+
+- **1 week**: Only near-term availability
+- **2 weeks**: Short-term scheduling
+- **1 month**: Standard advance booking
+- **3 months**: Long-term availability
+
+## Meeting Types
+
+Create different booking options:
+
+### Default Meeting
+
+Your standard meeting type:
+- Default duration (e.g., 30 minutes)
+- General purpose
+
+### Custom Meeting Types
+
+Create specialized options:
+
+**Examples:**
+- **Quick Chat** - 15 minutes
+- **Standard Meeting** - 30 minutes
+- **Deep Dive** - 60 minutes
+- **Consultation** - 45 minutes
+
+### Meeting Type Settings
+
+For each type, configure:
+
+| Setting | Description |
+|---------|-------------|
+| **Name** | What the meeting is called |
+| **Duration** | How long the meeting lasts |
+| **Description** | What the meeting is for |
+| **Location** | Default location or meeting link |
+
+## Sharing Your Booking Link
+
+### Your Booking URL
+
+Your booking page has a unique URL:
+
+```
+trilo.app/book/your-username
+```
+
+Or with a custom slug:
+```
+trilo.app/book/your-company
+```
+
+### Where to Share
+
+- Email signature
+- Website "Schedule a meeting" link
+- Social media profiles
+- Email responses when scheduling
+
+### Multiple Links
+
+Share specific meeting types directly:
+
+```
+trilo.app/book/your-username/quick-chat
+trilo.app/book/your-username/consultation
+```
+
+## When Someone Books
+
+### Booking Flow
+
+What the other person experiences:
+
+1. Opens your booking link
+2. Sees your available times
+3. Selects a time slot
+4. Enters their details (name, email)
+5. Confirms the booking
+
+### Confirmation
+
+After booking:
+
+- **They receive**: Confirmation email with details
+- **You receive**: Notification of new booking
+- **Calendar**: Event added to both calendars
+
+### Calendar Sync
+
+Booked meetings:
+- Appear on your Trilo calendar
+- Sync to connected calendars (Google, Outlook)
+- Block the time from future bookings
+
+## Managing Bookings
+
+### Viewing Bookings
+
+See your scheduled bookings:
+
+1. Check your calendar
+2. Or view in **Settings > Booking > Scheduled**
+
+### Rescheduling
+
+If you need to reschedule:
+
+1. Open the booking
+2. Click **Reschedule**
+3. Select a new time
+4. The booker is notified of the change
+
+### Canceling
+
+To cancel a booking:
+
+1. Open the booking
+2. Click **Cancel**
+3. Optionally add a reason
+4. The booker receives cancellation notice
+
+<Info>
+  Always provide notice when canceling. Last-minute cancellations create poor experiences.
+</Info>
+
+## Booking Page Customization
+
+### Appearance
+
+Customize how your booking page looks:
+
+- **Profile photo**: Your image or company logo
+- **Colors**: Match your brand
+- **Welcome message**: Custom greeting text
+
+### Questions
+
+Collect information from bookers:
+
+- **Name**: Always required
+- **Email**: Always required
+- **Custom questions**: Add your own
+
+**Example custom questions:**
+- "What would you like to discuss?"
+- "Company name"
+- "Phone number (optional)"
+
+## Blocking Time
+
+### Manual Blocks
+
+Block time when you're unavailable:
+
+1. Create an event on your calendar
+2. Mark it as "Busy" or "Out of office"
+3. That time won't appear as available for booking
+
+### Calendar Integration
+
+Connected calendars affect availability:
+
+- Events from Google/Outlook block booking slots
+- This prevents double-booking
+- Keep connected calendars up to date
+
+## Limits and Controls
+
+### Daily Limits
+
+Control how many meetings can be booked:
+
+- **Max bookings per day**: Limit daily meetings (e.g., 5)
+- Prevents overwhelm on busy days
+
+### Date-Specific Rules
+
+Customize specific dates:
+
+- Block holidays
+- Add extra availability for specific days
+- Override regular hours temporarily
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Set realistic availability">
+    Don't make every hour available. Leave time for focused work, breaks, and unexpected needs.
+  </Accordion>
+
+  <Accordion title="Use appropriate buffer times">
+    Back-to-back meetings are exhausting. Add buffers to maintain energy and handle overruns.
+  </Accordion>
+
+  <Accordion title="Keep calendars synced">
+    Connect external calendars to ensure availability is accurate and you don't get double-booked.
+  </Accordion>
+
+  <Accordion title="Create specific meeting types">
+    Different purposes need different durations. Offer options so bookers choose appropriately.
+  </Accordion>
+
+  <Accordion title="Customize your booking page">
+    A personalized booking page feels professional. Add your photo and a friendly bio.
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="No times showing as available">
+    - Check your working hours are set correctly
+    - Verify your calendar isn't fully blocked
+    - Check minimum notice period
+    - Ensure booking page is enabled
+  </Accordion>
+
+  <Accordion title="Double booked">
+    - Connect your external calendars
+    - Ensure sync is working
+    - Check buffer times
+    - Review calendar for conflicts
+  </Accordion>
+
+  <Accordion title="Booker didn't receive confirmation">
+    - Verify their email was entered correctly
+    - Check spam/junk folders
+    - Try resending the confirmation
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Calendar Integrations" icon="link" href="/calendar/integrations">
+    Connect external calendars for availability sync.
+  </Card>
+  <Card title="Events" icon="calendar-day" href="/calendar/events">
+    Learn more about managing calendar events.
+  </Card>
+</CardGroup>

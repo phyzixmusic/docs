@@ -1,0 +1,301 @@
+---
+title: "Areas and Projects"
+description: "Organize your workspace with areas and projects for maximum efficiency"
+---
+
+Within your workspace, areas and projects create the organizational structure for your work. Understanding how to use them effectively is key to keeping your team organized.
+
+## Organizational Hierarchy
+
+Trilo uses a three-level structure:
+
+```
+Workspace
+└── Areas (categories)
+    └── Projects (where work happens)
+        ├── Tasks
+        ├── Resources
+        ├── Chat
+        └── Calendar
+```
+
+## Areas
+
+### What Are Areas?
+
+Areas are high-level categories that group related projects. Think of them as folders or departments within your workspace.
+
+**Example areas:**
+- Engineering
+- Marketing
+- Operations
+- Client Projects
+- Product
+
+### Creating an Area
+
+<Steps>
+  <Step title="Go to the sidebar">
+    Look at the navigation sidebar.
+  </Step>
+  <Step title="Click + or New Area">
+    Find the add button near the Areas section.
+  </Step>
+  <Step title="Name your area">
+    Enter a clear, descriptive name.
+  </Step>
+  <Step title="Save">
+    Your area is created and ready for projects.
+  </Step>
+</Steps>
+
+### Area Settings
+
+Each area has settings you can configure:
+
+| Setting | Description |
+|---------|-------------|
+| **Name** | The area's display name |
+| **Description** | Optional description of what this area contains |
+| **Icon/Color** | Visual customization for easy identification |
+
+### Managing Areas
+
+#### Renaming
+
+1. Right-click the area name
+2. Select **Rename**
+3. Enter the new name
+4. Press Enter
+
+#### Reordering
+
+Drag areas in the sidebar to reorder them.
+
+#### Archiving
+
+For areas no longer active:
+
+1. Right-click the area
+2. Select **Archive**
+3. Archived areas are hidden but preserved
+
+## Projects
+
+### What Are Projects?
+
+Projects are where your actual work happens. Each project contains:
+
+- **Tasks**: Work items to complete
+- **Resources**: Knowledge base content (pages, spreadsheets, boards)
+- **Chat**: Project-specific communication channel
+- **Calendar**: Project-related events
+
+### Creating a Project
+
+<Steps>
+  <Step title="Navigate to an area">
+    Find the area where you want to create a project.
+  </Step>
+  <Step title="Click + or New Project">
+    Click the add button within the area.
+  </Step>
+  <Step title="Configure the project">
+    Enter name, prefix, and other settings.
+  </Step>
+  <Step title="Create">
+    Your project is ready to use.
+  </Step>
+</Steps>
+
+### Project Settings
+
+| Setting | Description |
+|---------|-------------|
+| **Name** | Project's display name |
+| **Prefix** | Short code for task IDs (e.g., "PROD" for PROD-1) |
+| **Description** | What this project is about |
+| **Due date** | Optional project deadline |
+| **Status** | Active, Completed, or Archived |
+| **AI features** | Enable/disable AI coworkers for this project |
+
+### Project Prefix
+
+The prefix creates unique task IDs:
+
+- Set a 2-4 character prefix
+- Tasks get IDs like `PROD-1`, `PROD-2`
+- Makes tasks easy to reference in chat and docs
+
+**Good prefix examples:**
+- PROD (Product)
+- MKT (Marketing)
+- ENG (Engineering)
+- CLIENT (Client project)
+
+### Managing Projects
+
+#### Renaming
+
+1. Open project settings
+2. Edit the name field
+3. Save changes
+
+#### Moving to Another Area
+
+1. Open project settings
+2. Find the **Area** field
+3. Select the new area
+4. Save changes
+
+#### Archiving
+
+For completed projects:
+
+1. Open project settings
+2. Change status to **Archived**
+3. Or right-click and select **Archive**
+
+Archived projects:
+- Are hidden from normal view
+- Preserve all data and history
+- Can be restored later
+
+#### Deleting
+
+<Warning>
+  Deleting a project removes all its tasks, resources, and chat history permanently.
+</Warning>
+
+1. Open project settings
+2. Find **Delete project**
+3. Confirm deletion
+
+## Navigating Projects
+
+### Sidebar Navigation
+
+- Areas listed in the sidebar
+- Expand areas to see projects
+- Click project name to open it
+- Star projects for quick access
+
+### Within a Project
+
+After opening a project, use the navigation to access:
+
+- **Overview**: Project summary
+- **Tasks**: Task management
+- **Resources**: Knowledge base
+- **Chat**: Project channel
+- **Calendar**: Project events
+
+### Quick Access
+
+**Starred projects** appear at the top:
+1. Right-click any project
+2. Select **Add to favorites** or click the star icon
+3. Project appears in quick access section
+
+## Organizing Your Workspace
+
+### By Department/Team
+
+```
+Workspace
+├── Engineering
+│   ├── Backend Development
+│   ├── Frontend Development
+│   └── DevOps
+├── Product
+│   ├── Roadmap
+│   └── User Research
+└── Marketing
+    ├── Content
+    └── Campaigns
+```
+
+### By Client
+
+```
+Workspace
+├── Internal
+│   ├── Operations
+│   └── Team Development
+├── Client: Acme Corp
+│   ├── Website Redesign
+│   └── Mobile App
+└── Client: Beta Inc
+    └── Consulting Project
+```
+
+### By Initiative/Quarter
+
+```
+Workspace
+├── Q1 2024
+│   ├── Product Launch
+│   └── Marketing Push
+├── Q2 2024
+│   └── Feature Development
+└── Ongoing
+    ├── Customer Support
+    └── Maintenance
+```
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Keep areas broad, projects specific">
+    Areas should be high-level categories. Projects should be specific initiatives or ongoing work streams.
+  </Accordion>
+
+  <Accordion title="Use consistent naming">
+    Establish naming conventions so everyone can find things easily. Document your conventions for new team members.
+  </Accordion>
+
+  <Accordion title="Archive completed work">
+    Don't delete completed projects—archive them. You may need to reference them later.
+  </Accordion>
+
+  <Accordion title="Review organization periodically">
+    As your team grows, review your structure. What made sense for 5 people may not work for 50.
+  </Accordion>
+
+  <Accordion title="Star frequently used projects">
+    Keep your most-used projects in quick access to reduce navigation time.
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Can't find a project">
+    - Check if it was archived (view archived items)
+    - Use search (`Cmd/Ctrl + K`)
+    - Check if you have access to the area
+  </Accordion>
+
+  <Accordion title="Can't create projects in an area">
+    - Verify you have permission to create projects
+    - Check if the area is archived
+    - Contact your workspace admin
+  </Accordion>
+
+  <Accordion title="Project prefix already taken">
+    - Each prefix must be unique within a workspace
+    - Choose a different prefix
+    - Consider adding numbers (MKT1, MKT2)
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Project Settings" icon="gear" href="/workspaces/project-settings">
+    Dive deeper into project configuration.
+  </Card>
+  <Card title="Inviting Members" icon="user-plus" href="/collaboration/inviting-members">
+    Add team members to your projects.
+  </Card>
+</CardGroup>

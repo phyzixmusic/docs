@@ -1,0 +1,252 @@
+---
+title: "Calendar Integrations"
+description: "Connect Google Calendar, Outlook, and other calendars to Trilo"
+---
+
+Trilo integrates with your existing calendars so you can see all your events in one place. Sync with Google Calendar, Outlook, and other calendar services for a unified scheduling experience.
+
+## Supported Integrations
+
+<CardGroup cols={2}>
+  <Card title="Google Calendar" icon="google">
+    Two-way sync with Google Calendar for personal and work accounts.
+  </Card>
+  <Card title="Outlook Calendar" icon="microsoft">
+    Connect Microsoft Outlook for Office 365 integration.
+  </Card>
+</CardGroup>
+
+## Google Calendar Integration
+
+### Connecting Google Calendar
+
+<Steps>
+  <Step title="Go to Settings">
+    Click **Settings** in the sidebar.
+  </Step>
+  <Step title="Select Integrations">
+    Click on **Integrations** or **Calendar**.
+  </Step>
+  <Step title="Click Connect Google Calendar">
+    Find the Google Calendar option and click **Connect**.
+  </Step>
+  <Step title="Sign in to Google">
+    You'll be redirected to Google. Sign in with your Google account.
+  </Step>
+  <Step title="Grant permissions">
+    Allow Trilo to access your calendar. Review the permissions and click **Allow**.
+  </Step>
+  <Step title="Select calendars">
+    Choose which Google calendars to sync with Trilo.
+  </Step>
+</Steps>
+
+### What Syncs
+
+With Google Calendar connected:
+
+| Direction | What Syncs |
+|-----------|------------|
+| **Google → Trilo** | Events from selected Google calendars appear in Trilo |
+| **Trilo → Google** | Events created in Trilo can appear in Google Calendar |
+
+### Managing Google Calendars
+
+After connecting, you can:
+
+- **Select calendars**: Choose which Google calendars to show
+- **Toggle visibility**: Show or hide specific calendars
+- **Set default**: Choose which calendar new events go to
+
+### Disconnecting
+
+To remove the Google Calendar integration:
+
+1. Go to **Settings > Integrations**
+2. Find Google Calendar
+3. Click **Disconnect**
+4. Confirm the disconnection
+
+<Info>
+  Disconnecting removes synced events from Trilo but doesn't affect your Google Calendar.
+</Info>
+
+## Outlook Calendar Integration
+
+### Connecting Outlook
+
+<Steps>
+  <Step title="Go to Settings">
+    Click **Settings** in the sidebar.
+  </Step>
+  <Step title="Select Integrations">
+    Navigate to the integrations section.
+  </Step>
+  <Step title="Click Connect Outlook">
+    Find Outlook Calendar and click **Connect**.
+  </Step>
+  <Step title="Sign in to Microsoft">
+    Enter your Microsoft account credentials.
+  </Step>
+  <Step title="Grant permissions">
+    Allow Trilo to access your calendar data.
+  </Step>
+  <Step title="Configure sync">
+    Select which calendars to sync.
+  </Step>
+</Steps>
+
+### Outlook Sync Features
+
+- View Outlook events in Trilo
+- See availability from Outlook
+- Create events that sync both ways
+- Support for Office 365 accounts
+
+## How Sync Works
+
+### Sync Frequency
+
+Calendar syncs happen:
+- **Automatically**: Every few minutes
+- **On action**: When you open the calendar
+- **Manual refresh**: Click refresh to sync immediately
+
+### Conflict Handling
+
+When the same event exists in multiple places:
+- Events are matched by unique identifiers
+- Changes in source calendar take priority
+- Deleted events are removed from sync
+
+### Event Details
+
+Synced events include:
+- Title
+- Date and time
+- Duration
+- Location
+- Description (if permitted)
+
+<Warning>
+  Private or confidential events may sync with limited details based on your privacy settings in the source calendar.
+</Warning>
+
+## Viewing Synced Events
+
+### Identifying Synced Events
+
+Synced events are marked with:
+- Source calendar indicator
+- Integration icon (Google, Outlook)
+- Different color coding (optional)
+
+### Editing Synced Events
+
+Depending on configuration:
+- **Some events**: Edit in Trilo, changes sync back
+- **Some events**: View-only in Trilo, edit in source calendar
+- **New events**: Can be created in either system
+
+## Multiple Calendars
+
+### Managing Multiple Sources
+
+You can connect:
+- Multiple Google accounts
+- Multiple Outlook accounts
+- Mix of different calendar services
+
+### Calendar Colors
+
+Assign colors to different calendars:
+- Personal calendar: Blue
+- Work calendar: Green
+- Team calendar: Purple
+
+This helps distinguish events at a glance.
+
+### Toggling Visibility
+
+Show or hide calendars:
+1. Open calendar settings
+2. Toggle visibility for each calendar
+3. Hidden calendars don't display events
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Events not syncing">
+    - Check your internet connection
+    - Verify the calendar is selected for sync
+    - Try disconnecting and reconnecting
+    - Click refresh to force a sync
+  </Accordion>
+
+  <Accordion title="Wrong time showing for events">
+    - Check timezone settings in Trilo
+    - Verify timezone in the source calendar
+    - Events should display in your local timezone
+  </Accordion>
+
+  <Accordion title="Can't connect calendar">
+    - Ensure pop-ups are allowed for authentication
+    - Try a different browser
+    - Check that you're using a supported calendar type
+    - Verify your account has calendar access enabled
+  </Accordion>
+
+  <Accordion title="Missing events after sync">
+    - Some private events may not sync
+    - Check if the calendar is selected for sync
+    - Verify date range (very old events may not sync)
+    - Check if the event was deleted in the source
+  </Accordion>
+
+  <Accordion title="Duplicate events appearing">
+    - Avoid creating the same event in multiple places
+    - Check if both Trilo and source calendar created it
+    - Delete the duplicate in the appropriate system
+  </Accordion>
+</AccordionGroup>
+
+## Privacy Considerations
+
+When connecting calendars:
+
+- Trilo requests only necessary permissions
+- Event data is stored securely
+- You control which calendars sync
+- Disconnect anytime to stop syncing
+- Private events respect privacy settings
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Connect relevant calendars only">
+    Don't sync every calendar you have. Choose the ones you need to see in Trilo for work purposes.
+  </Accordion>
+
+  <Accordion title="Use consistent event creation">
+    Decide whether to create events in Trilo or your source calendar. Consistency prevents confusion.
+  </Accordion>
+
+  <Accordion title="Review sync periodically">
+    Occasionally check that sync is working correctly. Look for missing or duplicate events.
+  </Accordion>
+
+  <Accordion title="Set appropriate privacy levels">
+    In your source calendar, set events you want to share as public/free, and sensitive events as private.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Booking Pages" icon="calendar-check" href="/calendar/booking">
+    Set up scheduling for external meetings.
+  </Card>
+  <Card title="Events" icon="calendar-day" href="/calendar/events">
+    Learn more about creating events.
+  </Card>
+</CardGroup>

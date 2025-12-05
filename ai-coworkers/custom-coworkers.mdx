@@ -1,0 +1,361 @@
+---
+title: "Custom AI Coworkers"
+description: "Create AI assistants tailored to your team's specific needs"
+---
+
+While Trilo provides built-in AI coworkers, you can create custom AI coworkers that are specialized for your team's unique needs. Custom coworkers can have specific personalities, expertise areas, and behaviors.
+
+## Why Create Custom Coworkers?
+
+Custom AI coworkers let you:
+
+- Match your brand voice and tone
+- Specialize in your domain knowledge
+- Create consistent responses for your use cases
+- Define specific behaviors and constraints
+- Build AI that understands your context
+
+## Creating a Custom Coworker
+
+### Getting Started
+
+<Steps>
+  <Step title="Go to AI Coworkers">
+    Navigate to the **AI Coworkers** section in settings.
+  </Step>
+  <Step title="Click Create">
+    Click **Create AI Coworker** or **+ New**.
+  </Step>
+  <Step title="Configure basics">
+    Set up name, avatar, and description.
+  </Step>
+  <Step title="Define behavior">
+    Write instructions for how the AI should behave.
+  </Step>
+  <Step title="Save">
+    Save your custom coworker. It's now available to your team.
+  </Step>
+</Steps>
+
+### Basic Settings
+
+#### Name
+
+Choose a clear, memorable name:
+- Reflects the coworker's purpose
+- Easy to identify in lists
+- Professional and appropriate
+
+**Examples:**
+- "Brand Voice Editor"
+- "Customer Support Assistant"
+- "Technical Documentation Helper"
+
+#### Avatar
+
+Set a visual identity:
+- Upload a custom image
+- Use generated avatars
+- Choose colors that fit your brand
+
+#### Description
+
+Write a brief description that helps users understand:
+- What this coworker does
+- When to use it
+- Its areas of expertise
+
+**Example:**
+```
+Helps write customer-facing communications in our
+brand voice. Specializes in support emails, product
+announcements, and social media content.
+```
+
+## Defining Behavior
+
+### Base Prompt
+
+The base prompt tells the AI how to behave. This is the most important configuration.
+
+**Structure your prompt to include:**
+
+1. **Role definition**: Who is this AI?
+2. **Expertise**: What does it know?
+3. **Tone and style**: How should it communicate?
+4. **Guidelines**: Rules it should follow
+5. **Constraints**: What it should avoid
+
+### Example Base Prompt
+
+```
+You are a Customer Support Assistant for Acme Corp.
+
+**Role:** Help team members draft responses to customer
+inquiries, ensuring consistent and helpful communication.
+
+**Expertise:**
+- Product knowledge for Acme's software suite
+- Common customer issues and solutions
+- Support best practices
+
+**Tone:**
+- Friendly and professional
+- Empathetic to customer concerns
+- Clear and concise
+- Solution-oriented
+
+**Guidelines:**
+- Always acknowledge the customer's concern first
+- Provide clear next steps
+- Offer additional resources when relevant
+- End with a helpful closing
+
+**Avoid:**
+- Technical jargon customers won't understand
+- Blaming the customer
+- Making promises we can't keep
+- Sharing internal processes
+```
+
+### Writing Effective Prompts
+
+<AccordionGroup>
+  <Accordion title="Be specific">
+    Vague instructions lead to inconsistent results. Clearly state what you want.
+  </Accordion>
+
+  <Accordion title="Include examples">
+    Show the AI what good output looks like.
+    ```
+    Example response style:
+    "Hi [Name], I completely understand how frustrating this must be.
+    Let me help you resolve this right away..."
+    ```
+  </Accordion>
+
+  <Accordion title="Define boundaries">
+    Tell the AI what NOT to do as clearly as what to do.
+  </Accordion>
+
+  <Accordion title="Test and iterate">
+    After creating, test with real scenarios. Adjust the prompt based on results.
+  </Accordion>
+</AccordionGroup>
+
+## Advanced Configuration
+
+### Skills and Capabilities
+
+Enable or configure specific capabilities:
+
+| Capability | Description |
+|------------|-------------|
+| **Task Creation** | Can create tasks from conversations |
+| **Image Generation** | Can generate images (if available) |
+| **Document Analysis** | Can process uploaded files |
+| **Web Search** | Can search for information (if configured) |
+
+### Temperature Setting
+
+Control how creative vs. consistent the AI is:
+
+- **Lower (0.1-0.3)**: More consistent, focused responses
+- **Medium (0.5-0.7)**: Balanced creativity and consistency
+- **Higher (0.8-1.0)**: More creative, varied responses
+
+**When to adjust:**
+- Support responses: Lower temperature for consistency
+- Creative writing: Higher temperature for variety
+- Technical answers: Lower temperature for accuracy
+
+### Token Limits
+
+Set maximum response length:
+
+- Shorter limits for concise answers
+- Longer limits for detailed content
+- Balance between thoroughness and brevity
+
+## Use Case Examples
+
+### Customer Support Assistant
+
+```
+**Name:** Support Helper
+
+**Description:** Drafts customer support responses
+following our guidelines and tone.
+
+**Base Prompt:**
+You help draft customer support emails. Follow these principles:
+- Always empathize first
+- Provide clear solutions
+- Use simple, jargon-free language
+- Include relevant help center links
+- Sign off warmly
+
+Avoid: defensive language, technical terms,
+acknowledging bugs not yet announced publicly.
+```
+
+### Content Editor
+
+```
+**Name:** Brand Voice Editor
+
+**Description:** Reviews and edits content to match
+our brand voice and style guide.
+
+**Base Prompt:**
+You are an editor who ensures all content matches
+our brand voice.
+
+Our voice is:
+- Confident but not arrogant
+- Friendly and approachable
+- Clear and concise
+- Optimistic and helpful
+
+When reviewing content:
+1. Check for brand voice alignment
+2. Suggest specific improvements
+3. Flag any issues
+4. Provide the edited version
+```
+
+### Onboarding Guide
+
+```
+**Name:** Onboarding Buddy
+
+**Description:** Helps new team members learn
+our processes and tools.
+
+**Base Prompt:**
+You help new team members get up to speed.
+You're friendly, patient, and thorough.
+
+Knowledge areas:
+- Company tools and how to use them
+- Team processes and workflows
+- Where to find documentation
+- Who to ask for what
+
+Always:
+- Welcome questions, no matter how basic
+- Point to relevant resources
+- Suggest logical next steps
+- Encourage asking follow-up questions
+```
+
+## Managing Custom Coworkers
+
+### Editing
+
+To update a custom coworker:
+
+1. Go to AI Coworkers in settings
+2. Find your custom coworker
+3. Click **Edit**
+4. Make changes
+5. Save
+
+Changes apply to new conversations.
+
+### Duplicating
+
+Create variations based on existing coworkers:
+
+1. Find the coworker to copy
+2. Click **Duplicate**
+3. Modify as needed
+4. Save with a new name
+
+### Deleting
+
+Remove coworkers no longer needed:
+
+1. Find the coworker
+2. Click **Delete**
+3. Confirm deletion
+
+<Warning>
+  Deleting a custom coworker removes it permanently. Existing conversation history remains but new conversations can't be started.
+</Warning>
+
+## Sharing Custom Coworkers
+
+### Workspace Availability
+
+Custom coworkers can be available to:
+- **Entire workspace**: Everyone can use it
+- **Specific projects**: Only in certain projects
+- **Specific roles**: Only certain team members
+
+### Permissions
+
+Control who can:
+- **Use**: Start conversations with the coworker
+- **Edit**: Modify the coworker's configuration
+- **Delete**: Remove the coworker
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Start simple">
+    Begin with a basic configuration. Add complexity as you learn what works.
+  </Accordion>
+
+  <Accordion title="Test thoroughly">
+    Before rolling out, test with various scenarios to ensure consistent behavior.
+  </Accordion>
+
+  <Accordion title="Gather feedback">
+    Ask team members how well the coworker performs. Use feedback to improve.
+  </Accordion>
+
+  <Accordion title="Document purpose">
+    Write clear descriptions so team members know when to use each coworker.
+  </Accordion>
+
+  <Accordion title="Maintain over time">
+    Review and update coworkers as your needs evolve. Outdated prompts give outdated results.
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Coworker not following instructions">
+    - Make instructions more explicit
+    - Add examples of correct behavior
+    - Remove conflicting guidelines
+    - Test with the prompt to refine
+  </Accordion>
+
+  <Accordion title="Responses are inconsistent">
+    - Lower the temperature setting
+    - Be more specific in the prompt
+    - Add constraints and boundaries
+    - Include more examples
+  </Accordion>
+
+  <Accordion title="Coworker is too verbose">
+    - Add instruction: "Be concise"
+    - Set lower token limits
+    - Specify desired response length
+    - Include examples of ideal length
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="AI Capabilities" icon="wand-magic-sparkles" href="/ai-coworkers/ai-capabilities">
+    Explore what AI coworkers can do.
+  </Card>
+  <Card title="Chatting with AI" icon="comment" href="/ai-coworkers/chatting-with-ai">
+    Learn effective AI communication.
+  </Card>
+</CardGroup>
