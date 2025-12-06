@@ -3,9 +3,9 @@
   "theme": "aspen",
   "name": "Trilo",
   "colors": {
-    "primary": "#00C1FF",
-    "light": "#00D4FF",
-    "dark": "#0099CC"
+    "primary": "#FFAE00",
+    "light": "#FFAE00",
+    "dark": "#FFAE00"
   },
   "favicon": "/favicon.png",
   "metadata": {
